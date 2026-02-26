@@ -55,7 +55,7 @@
 </div>
 </div>
 
-</section>
+</section>  
 
 <section id="experience">
 <h2>Professional Experience</h2>
@@ -116,12 +116,14 @@ An academic recognition awarded to students for outstanding academic performance
 
 <section id="contact">
 <h2>Contact</h2>
+
 <form>
 <input type="text" placeholder="Full Name">
 <input type="email" placeholder="Email">
 <textarea placeholder="Message"></textarea>
 <button type="submit">Send</button>
 </form>
+
 </section>
 
 <footer>© 2026 Andreas Sufiandi</footer>
@@ -144,6 +146,14 @@ if(link.getAttribute("href") === "#" + current){
 link.classList.add("active");
 }
 });
+});
+
+/* Hamburger Toggle */
+const toggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+toggle.addEventListener("click", () => {
+navMenu.classList.toggle("active");
 });
 </script>
 
